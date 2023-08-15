@@ -1,4 +1,95 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+:root {
+  --white: #e0e0e0;
+  --font-color: #F2D2BD;
+  --brown-bg: #7C3030;
+  --brown-bg-alpha: rgba(160, 82, 45, 0.7);
+  --brown-bg2-alpha: rgba(160, 82, 46, 0.7);
+  font-family: 'Rock Salt', cursive;
+  margin: 0;
+
+}
+
+
+body {
+  background-image: linear-gradient(to bottom, var(--brown-bg-alpha), var(--brown-bg2-alpha)), url("bin/dothraki.jpg");
+  background-color: var(--brown-bg);
+  color: var(--font-color);
+  background-position: top center;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-attachment: fixed;
+
+}
+
+.container {
+  width: 50%;
   height: 100%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+
+header,
+main,
+footer {
+  margin: auto;
   width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+
+.text-area {
+  width: 100%;
+  height: 100px;
+  margin: 20px auto;
+  display: block;
+  padding: 1rem 1rem;
+  border: solid var(--font-color) 5px;
+  box-sizing: border-box;
+  background-color: var(--white);
+  border-radius: 10px;
+  outline: none;
+  font-family: 'Rock Salt';
+}
+
+
+textarea::placeholder {
+  font-family: 'Rock Salt';
+}
+
+button {
+  background-color: black;
+  margin: 5px 5px;
+  font-weight: 800;
+  padding: 1rem 1rem;
+  color: var(--font-color);
+  font-family: 'Rock Salt';
+  border-radius: 10px;
+
+}
+
+button:hover {
+  background-color: transparent;
+  border-color: var(--font-color);
+  color: var(--white);
+}
+
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  font-size: small;
 }
